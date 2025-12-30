@@ -112,7 +112,7 @@ function ResponsiveAppBar() {
             }}
           >
             NutriTrack
-          </Typography>
+          </Typography><br />
           <Typography variant="caption" gutterBottom>
                         Track what you eat - Transform how you live
                     </Typography>
