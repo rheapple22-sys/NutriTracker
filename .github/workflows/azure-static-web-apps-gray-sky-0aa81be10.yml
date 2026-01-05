@@ -36,7 +36,6 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "frontend" # App source code path
           output_location: "dist"
-          skip_app_build: true
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
@@ -50,6 +49,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GRAY_SKY_0AA81BE10 }}
           action: "close"
+
 
 
 
