@@ -6,6 +6,11 @@ import App from "./App";
 import { AuthProvider } from "./auth/AuthProvider";
 import "./index.css";
 
+console.log(
+  "VITE_GOOGLE_CLIENT_ID from env:",
+  import.meta.env.VITE_GOOGLE_CLIENT_ID
+);
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
