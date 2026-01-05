@@ -39,7 +39,7 @@ export default function LoginPage() {
           <div className="mt-8">
             <GoogleLogin width={'200px'}
               onSuccess={(res) => {
-                const decoded: any = jwtDecode(res.credential!);
+                jwtDecode(res.credential!);
 
                 login(res.credential!);
 

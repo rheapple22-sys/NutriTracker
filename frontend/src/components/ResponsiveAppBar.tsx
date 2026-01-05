@@ -16,7 +16,6 @@ import { useAuth } from "../auth/AuthProvider";
 import { useNavigate } from "react-router-dom";
 
 const pages = ['Insights', 'Calorie Calculator', 'Meal Plans'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
   const { user, logout } = useAuth();
