@@ -24,12 +24,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          
-      - name: Clean Install Dependencies
-        run: npm install
-        
-      - name: Build app
-        run: npm run build
         
       - name: Build And Deploy
         id: builddeploy
@@ -56,6 +50,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GRAY_SKY_0AA81BE10 }}
           action: "close"
+
 
 
 
