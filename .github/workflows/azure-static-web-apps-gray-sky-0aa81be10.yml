@@ -29,7 +29,7 @@ jobs:
           
       - name: Clean Install Dependencies
         working-directory: frontend
-        run: npm install
+        run: npm ci --omit=optional
         
       - name: Build app
         working-directory: frontend
