@@ -27,6 +27,8 @@ jobs:
           
       - name: Install Dependencies
         working-directory: frontend
+        env:
+          VITE_GOOGLE_CLIENT_ID: ${{ secrets.VITE_GOOGLE_CLIENT_ID }}
         run: |
           rm -rf node_modules package-lock.json
           npm install
